@@ -30,6 +30,8 @@ app.post('/create-checkout-session', async (req, res) => {
 // app.post('/create-product', async (req, res) => {
   
 // })
+
+// create Product name and Product ID 
 async function createProduct(name){
   const product = await stripe.products.create({
     name: name,
@@ -43,6 +45,7 @@ async function createProduct(name){
   });
   console.log(price)
 
+  
   priceID = price.id;
 }
 
