@@ -49,7 +49,7 @@ async function createProduct(name){
   priceID = price.id;
 }
 
-createProduct('manish1');
+createProduct('manishP1');
 
 
 
